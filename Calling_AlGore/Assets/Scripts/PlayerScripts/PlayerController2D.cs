@@ -14,26 +14,23 @@ public class PlayerController2D : MonoBehaviour
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-
-        
     }
 
     private void FixedUpdate()
-    {
+    {   
+        // Basic player movement based on input
         if(Input.GetKey("d") || Input.GetKey("right"))
         {
-            rb2d.velocity = new Vector2(2, 0);
+            rb2d.velocity = new Vector2(2, rb2d.velocity.y);
         }
         else if (Input.GetKey("a") || Input.GetKey("left"))
         {
-
-            rb2d.velocity = new Vector2(-2, 0);
+            rb2d.velocity = new Vector2(-2, rb2d.velocity.y);
         }
-        else if (Input.GetKey("space") || Input.GetKey("up"))
+        // Jumping
+        if (Input.GetKey("space") || Input.GetKey("up"))
         {
-
-            rb2d.velocity = new Vector2(0, 4);
+            rb2d.velocity = new Vector2(rb2d.velocity.x, 4);
         }
     }
 
