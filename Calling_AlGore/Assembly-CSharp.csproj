@@ -63,9 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\EnemyScript\DieScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerController\PlayerController2D.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerWeapons\DestroyWeaponScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerWeapons\bulletScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerWeapons\destroyBulletScript.cs" />
-    <Compile Include="Assets\bulletScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Zoffer/Documents/GitHub/GD_Calling_AlGore/Calling_AlGore/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
