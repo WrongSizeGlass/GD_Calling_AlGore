@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController2D : MonoBehaviour
 {
     Rigidbody2D rb2d;
+    Animator animator;
 
     [SerializeField]
     Transform groundCheck;
@@ -17,6 +18,7 @@ public class PlayerController2D : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
